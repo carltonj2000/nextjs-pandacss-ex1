@@ -1,5 +1,13 @@
-import { css } from "../../styled-system/css";
+import Image from "next/image";
+import { css, cva } from "../../styled-system/css";
 import { center, circle, hstack, stack } from "../../styled-system/patterns";
+
+const buttonRecipe = cva({
+  base: {
+    cursor: "pointer",
+  },
+});
+
 export default function Home() {
   return (
     <div className={center({ height: "100vh" })}>
@@ -15,11 +23,11 @@ export default function Home() {
         <div className={stack({ gap: 4 })}>
           <div className={hstack({ gap: 4 })}>
             <div className={circle({ size: 12, overflow: "hidden" })}>
-              <img
+              <Image
                 src="https://avatars.githubusercontent.com/u/834149?v=4"
                 alt="Carlton Joseph"
-                height="120px"
-                width="120px"
+                height={120}
+                width={120}
               />
             </div>
             <div>
