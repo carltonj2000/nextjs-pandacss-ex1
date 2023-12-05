@@ -77,7 +77,6 @@ export default function Home() {
               praesentium tempore similique!
             </blockquote>
           </div>
-          B
         </div>
       </Stack>
     </div>
