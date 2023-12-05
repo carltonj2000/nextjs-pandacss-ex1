@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { css, cva } from "../../styled-system/css";
-import { styled } from "../../styled-system/jsx";
+import { Stack, styled } from "../../styled-system/jsx";
 import { center, circle, hstack, stack } from "../../styled-system/patterns";
 
 const buttonRecipe = cva({
@@ -37,7 +37,7 @@ const Button = styled("button", buttonRecipe);
 export default function Home() {
   return (
     <div className={center({ height: "100vh" })}>
-      <div className={stack({ gap: 2 })}>
+      <Stack gap={2}>
         <button className={buttonRecipe({ visual: "outline", size: "lg" })}>
           hi
         </button>
@@ -46,6 +46,7 @@ export default function Home() {
           hello
         </button>
         <Button>JSX it is</Button>
+        <Button visual="outline">JSX it is</Button>
         <div
           className={css({
             border: "3px solid #000000",
@@ -78,7 +79,7 @@ export default function Home() {
           </div>
           B
         </div>
-      </div>
+      </Stack>
     </div>
   );
 }
