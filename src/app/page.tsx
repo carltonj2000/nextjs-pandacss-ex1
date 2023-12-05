@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { css, cva } from "../../styled-system/css";
+import { styled } from "../../styled-system/jsx";
 import { center, circle, hstack, stack } from "../../styled-system/patterns";
 
 const buttonRecipe = cva({
@@ -31,6 +32,8 @@ const buttonRecipe = cva({
   },
 });
 
+const Button = styled("button", buttonRecipe);
+
 export default function Home() {
   return (
     <div className={center({ height: "100vh" })}>
@@ -42,6 +45,7 @@ export default function Home() {
         <button className={buttonRecipe({ visual: "solid", size: "sm" })}>
           hello
         </button>
+        <Button>JSX it is</Button>
         <div
           className={css({
             border: "3px solid #000000",
@@ -72,6 +76,7 @@ export default function Home() {
               praesentium tempore similique!
             </blockquote>
           </div>
+          B
         </div>
       </div>
     </div>

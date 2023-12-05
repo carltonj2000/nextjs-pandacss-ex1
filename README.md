@@ -1,5 +1,9 @@
 # NextJS with PandaCSS Example 1
 
+If you add a `jsxFramework` to `panda.config.ts` make sure to run
+`npx panda codegent` inorder to generate the `styled` function in the
+`../styled-system/jsx` files.
+
 ## Creation History
 
 Created by following the steps at:
